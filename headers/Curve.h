@@ -14,6 +14,8 @@ public:
     virtual Vector getDerivative(double t) const = 0;
 
     explicit Curve(double radius) : radius(radius) {}
+
+    virtual ~Curve() = default;
 };
 
 #endif //TEST_FOR_CAD_CURVE_H
